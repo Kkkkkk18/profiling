@@ -2,7 +2,7 @@
 
 project ("profiling")
 
-add_executable (profiling "src/main.cpp")
+add_executable (profiling main.cpp)
 
 
 if (CMAKE_VERSION VERSION_GREATER 3.12)
