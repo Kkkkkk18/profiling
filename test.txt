@@ -1,0 +1,34 @@
+тест по строкам
+I   refs:      246,684,178
+I1  misses:          2,345
+LLi misses:          2,123
+I1  miss rate:        0.00%
+LLi miss rate:        0.00%
+
+D   refs:      126,049,110  (84,779,432 rd   + 41,269,678 wr)
+D1  misses:        144,136  (    75,680 rd   +     68,456 wr)
+LLd misses:         72,913  (     8,121 rd   +     64,792 wr)
+D1  miss rate:         0.1% (       0.1%     +        0.2%  )
+LLd miss rate:         0.1% (       0.0%     +        0.2%  )
+
+LL refs:           145,846  (   77,390 rd    +     68,456 wr)
+LL misses:          75,173  (    10,381 rd   +     64,792 wr)
+LL miss rate:          0.0% (       0.0%     +        0.1%  )
+
+тест по столбцам
+
+I   refs:      246,684,182
+I1  misses:          2,347
+LLi misses:          2,126
+I1  miss rate:        0.00%
+LLi miss rate:        0.00%
+
+D   refs:      126,049,110  (84,779,432 rd   + 41,269,678 wr)
+D1  misses:      1,091,814  ( 1,023,356 rd   +     68,458 wr)
+LLd misses:         72,913  (     8,121 rd   +     64,792 wr)
+D1  miss rate:         1.0% (       1.3%     +        0.2%  )
+LLd miss rate:         0.1% (       0.0%     +        0.2%  )
+
+LL refs:         1,094,290  ( 1,025,832 rd   +     68,458 wr)
+LL misses:          75,175  (    10,383 rd   +     64,792 wr)
+LL miss rate:          0.0% (       0.0%     +        0.1%  )
