@@ -1,34 +1,42 @@
 тест по строкам
-I   refs:      246,684,178
-I1  misses:          2,345
-LLi misses:          2,123
-I1  miss rate:        0.00%
-LLi miss rate:        0.00%
 
-D   refs:      126,049,110  (84,779,432 rd   + 41,269,678 wr)
-D1  misses:        144,136  (    75,680 rd   +     68,456 wr)
-LLd misses:         72,913  (     8,121 rd   +     64,792 wr)
-D1  miss rate:         0.1% (       0.1%     +        0.2%  )
-LLd miss rate:         0.1% (       0.0%     +        0.2%  )
+time spend by rows: 2588 ms
 
-LL refs:           145,846  (   77,390 rd    +     68,456 wr)
-LL misses:          75,173  (    10,381 rd   +     64,792 wr)
-LL miss rate:          0.0% (       0.0%     +        0.1%  )
-
+I   refs:      2,707,447,818
+I1  misses:            2,155
+LLi misses:            2,079
+I1  miss rate:          0.00%
+LLi miss rate:          0.00%
+   
+D   refs:      1,502,723,891  (1,401,807,176 rd   + 100,916,715 wr)
+D1  misses:       12,554,707  (    6,283,620 rd   +   6,271,087 wr)
+LLd misses:       12,548,940  (    6,278,870 rd   +   6,270,070 wr)
+D1  miss rate:           0.8% (          0.4%     +         6.2%  )
+LLd miss rate:           0.8% (          0.4%     +         6.2%  )
+   
+LL refs:          12,556,862  (    6,285,775 rd   +   6,271,087 wr)
+LL misses:        12,551,019  (    6,280,949 rd   +   6,270,070 wr)
+LL miss rate:            0.3% (          0.2%     +         6.2%  )
+  
 тест по столбцам
 
-I   refs:      246,684,182
-I1  misses:          2,347
-LLi misses:          2,126
-I1  miss rate:        0.00%
-LLi miss rate:        0.00%
+time spend by rows: 5749 ms
 
-D   refs:      126,049,110  (84,779,432 rd   + 41,269,678 wr)
-D1  misses:      1,091,814  ( 1,023,356 rd   +     68,458 wr)
-LLd misses:         72,913  (     8,121 rd   +     64,792 wr)
-D1  miss rate:         1.0% (       1.3%     +        0.2%  )
-LLd miss rate:         0.1% (       0.0%     +        0.2%  )
+I   refs:      2,707,447,818
+I1  misses:            2,154
+LLi misses:            2,078
+I1  miss rate:          0.00%
+LLi miss rate:          0.00%
+   
+D   refs:      1,502,723,891  (1,401,807,176 rd   + 100,916,715 wr)
+D1  misses:      118,810,955  (  112,539,868 rd   +   6,271,087 wr)
+LLd misses:       12,541,255  (    6,271,185 rd   +   6,270,070 wr)
+D1  miss rate:           7.9% (          8.0%     +         6.2%  )
+LLd miss rate:           0.8% (          0.4%     +         6.2%  )
+   
+LL refs:         118,813,109  (  112,542,022 rd   +   6,271,087 wr)
+LL misses:        12,543,333  (    6,273,263 rd   +   6,270,070 wr)
+LL miss rate:            0.3% (          0.2%     +         6.2%  )
 
-LL refs:         1,094,290  ( 1,025,832 rd   +     68,458 wr)
-LL misses:          75,175  (    10,383 rd   +     64,792 wr)
-LL miss rate:          0.0% (       0.0%     +        0.1%  )
+При переборе матрицы по столбцам время выполнения меньше, чем при переборе по строкам. 
+Перебор по столбцам имеет больше промахов в кэше данных по сравнению с перебором по строкам.
