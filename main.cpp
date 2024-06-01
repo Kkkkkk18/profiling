@@ -4,8 +4,8 @@
 #include <chrono>
 
 
-const int MATRIX_R = 500;
-const int MATRIX_C = 500;
+const int MATRIX_R = 10000;
+const int MATRIX_C = 10000;
 
 void createRandomMatrix(int matrix[MATRIX_R][MATRIX_C], int row, int column) {
 
@@ -44,8 +44,8 @@ void calculationCSum(const int matrix[MATRIX_R][MATRIX_C], int row, int column) 
 }
 int main() {
     
-    const int row = 500;
-    const int column = 500;
+    const int row = 10000;
+    const int column = 10000;
 
     int matrix[MATRIX_R][MATRIX_C];
 
